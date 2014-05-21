@@ -7,7 +7,8 @@ The algorithm is described in detail in Strobl EV, Visweswaran S. Deep Multiple 
 
 Code
 ---
-Please download the entire package (including the utility functions)
+
+*Requires LIBSVM (http://www.csie.ntu.edu.tw/~cjlin/libsvm/)*. Then, please download the entire package (including the utility functions)
 
 *Main Methods*
 
