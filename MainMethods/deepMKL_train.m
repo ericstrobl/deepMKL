@@ -6,8 +6,8 @@ function [model,net] = deepMKL_train(x,y,nLayers,C,LR,maxI)
 % (2) y = training target matrix, where rows are instances
 % (3) nLayers = number of layers, 1 or 2
 % (4) C = SVM penalty constant (default=10)
-% (4) LR = learning rate (default=1E-4)
-% (5) maxI = maximum number of iterations (default=100)
+% (5) LR = learning rate (default=1E-4)
+% (6) maxI = maximum number of iterations (default=100)
 %
 % Outputs:
 % (1) model = LIBSVM model
