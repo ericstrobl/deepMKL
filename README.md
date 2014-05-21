@@ -12,6 +12,6 @@ Requires LIBSVM (http://www.csie.ntu.edu.tw/~cjlin/libsvm/). Then, please downlo
 
 *Main Methods*
 
-deepMKL_train.m.m - Trains the net
+deepMKL_train.m.m - Trains the net. Each layer has an RBF, poly2, poly3, and linear kernel. 
 
 deepMKL_test.m.m - Tests the net
