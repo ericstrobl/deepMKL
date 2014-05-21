@@ -1,9 +1,9 @@
 function [model,net] = deepMKL_train(x,y,nLayers,maxI,LR)
-% Markov blanket discovery by forward selection
+% Deep Multiple Kernel Learning by Span Bound
 % 
 % Inputs:
 % (1) x = trainng data matrix, where rows are instances and columns are features
-% (2) TarIndx = training target matrix, where rows are instances
+% (2) y = training target matrix, where rows are instances
 % (3) nLayers = number of layers, 1 or 2
 % (4) maxI = maximum number of iterations (default=100)
 % (5) LR = learning rate (default=1E-4)
