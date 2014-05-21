@@ -1,10 +1,11 @@
-function [model,net] = deepMKL_train(x,y,nLayers,LR,maxI)
+function [model,net] = deepMKL_train(x,y,nLayers,C,LR,maxI)
 % Deep Multiple Kernel Learning by Span Bound
 % 
 % Inputs:
 % (1) x = trainng data matrix, where rows are instances and columns are features
 % (2) y = training target matrix, where rows are instances
 % (3) nLayers = number of layers, 1 or 2
+% (4) C = SVM penalty constant (default=10)
 % (4) LR = learning rate (default=1E-4)
 % (5) maxI = maximum number of iterations (default=100)
 %
@@ -17,8 +18,9 @@ function [model,net] = deepMKL_train(x,y,nLayers,LR,maxI)
 
 
 %default values
-SetDefaultValue(4,'LR',1E-4);
-SetDefaultValue(5,'maxI',100);
+SetDefaultValue(4,'C',10);
+SetDefaultValue(5,'LR',1E-4);
+SetDefaultValue(6,'maxI',100);
 
 
 %initialize weights
@@ -36,7 +38,7 @@ for t=1:maxI,
    
     %train SVM
     Ks = reshape(Kf(:,nLayers),r,r);
-    model = svmtrain(y, [(1:r)',Ks], '-t 4 -c 10 -q 1');
+    model = svmtrain(y, [(1:r)',Ks], ['-c ' num2str(C) ' -t 4 -q 1']);
     
     %kernels
     [K,Kf] = computeKernels(dotx,sig,betas,nLayers);
