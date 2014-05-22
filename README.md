@@ -14,6 +14,6 @@ Requires the MATLAB version of LIBSVM (http://www.csie.ntu.edu.tw/~cjlin/libsvm/
 
 *Main Methods*
 
-deepMKL_train.m.m - Trains the net. Each layer has an RBF, poly2, poly3, and linear kernel. 
+deepMKL_train.m - Trains the net. Each layer has an RBF, poly2, poly3, and linear kernel. 
 
-deepMKL_test.m.m - Tests the net
+deepMKL_test.m - Tests the net
