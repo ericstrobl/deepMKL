@@ -5,7 +5,7 @@ This is an algorithm that optimizes a deep multiple kernel net by alternating op
 
 The algorithm is described in detail in Strobl EV, Visweswaran S. Deep Multiple Kernel Learning. ICMLA, 2013. http://arxiv.org/abs/1310.3101
 
-I just uploaded this, so please let me know if you find any bugs/things dont work.
+I just uploaded this, so please let me know if you find any bugs or things that dont work.
 
 Code
 ---
