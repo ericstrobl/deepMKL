@@ -3,7 +3,7 @@ function [pred,acc] = deepMKL_test(xA,y,model,net)
 % 
 % Inputs:
 % (1) xA = trainng and testing data matrix, where rows are instances and columns are features
-% (2) y = testing target matrix, where rows are instances
+% (2) y = testing target vector, where rows are instances
 % (3) model = LIBSVM model
 % (4) net = net parameters
 %
