@@ -10,7 +10,7 @@ I just uploaded this, so please let me know if you find any bugs or things that 
 Code
 ---
 
-Requires the MATLAB version of LIBSVM (http://www.csie.ntu.edu.tw/~cjlin/libsvm/). Then, please download the entire package (including the utility functions)
+First, please install the MATLAB version of LIBSVM (http://www.csie.ntu.edu.tw/~cjlin/libsvm/). Then, download the entire package uploaded here (including the utility functions)
 
 *Main Methods*
 
