@@ -3,7 +3,7 @@ function [model,net] = deepMKL_train(x,y,nLayers,C,LR,maxI)
 % 
 % Inputs:
 % (1) x = trainng data matrix, where rows are instances and columns are features
-% (2) y = training target matrix, where rows are instances
+% (2) y = training target vector, where rows are instances
 % (3) nLayers = number of layers, 1 or 2
 % (4) C = SVM penalty constant (default=10)
 % (5) LR = learning rate (default=1E-4)
