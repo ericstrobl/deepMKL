@@ -5,8 +5,6 @@ This is an algorithm that tunes a deep multiple kernel net by alternating optimi
 
 The algorithm is described in detail in Strobl EV, Visweswaran S. Deep Multiple Kernel Learning. ICMLA, 2013. http://arxiv.org/abs/1310.3101
 
-I just uploaded this, so please let me know if you find any bugs or things that dont work.
-
 Code
 ---
 
