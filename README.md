@@ -12,6 +12,6 @@ First, please install the MATLAB version of LIBSVM (http://www.csie.ntu.edu.tw/~
 
 *Main Methods*
 
-deepMKL_train.m - Trains the net. Each layer has an RBF, poly2, poly3, and linear kernel. If the span is increasing, then your learning rate is probably too high. The default value works for many cases, but some adjustment may be needed.
+deepMKL_train.m - Trains the net. Each layer has an RBF, poly2, poly3, and linear kernel. If the span is increasing, then the learning rate is probably too high. The default value works for many cases, but some adjustment may be needed.
 
 deepMKL_test.m - Tests the net
