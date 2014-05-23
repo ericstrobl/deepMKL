@@ -8,10 +8,10 @@ The algorithm is described in detail in Strobl EV, Visweswaran S. Deep Multiple 
 Code
 ---
 
-First, please install the MATLAB version of LIBSVM (http://www.csie.ntu.edu.tw/~cjlin/libsvm/). Then, download the entire package uploaded here (including the utility functions)
+First, please install the MATLAB version of LIBSVM (http://www.csie.ntu.edu.tw/~cjlin/libsvm/). Then, download the entire package uploaded here (including the utility functions).
 
 *Main Methods*
 
-deepMKL_train.m - Trains the net. Each layer has an RBF, poly2, poly3, and linear kernel. 
+deepMKL_train.m - Trains the net. Each layer has an RBF, poly2, poly3, and linear kernel. How to adjust the learning rate: if the span bound is not on a decreasing trend, then your learning rate is probably too high. The default value works for most cases, but some adjustment may be needed.
 
 deepMKL_test.m - Tests the net
