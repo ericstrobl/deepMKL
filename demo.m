@@ -29,7 +29,7 @@ disp('TICTACTOE')
 [pred,acc] = deepMKL_test([x;Xtest],Ytest,model,net);
 
 %two layer
-[model,net] = deepMKL_train(x,y,2,1E-2);
+[model,net] = deepMKL_train(x,y,2,1E-5);
 [pred,acc] = deepMKL_test([x;Xtest],Ytest,model,net);
 
 %three layer
