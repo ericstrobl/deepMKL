@@ -1,9 +1,9 @@
 function [Xtrain, Xtest, Ytrain, Ytest] = loadAudiologyDataset()
 
-load C:\Users\E\Documents\MATLAB\Audiology_Dataset\Audiology_TestData.mat
-load C:\Users\E\Documents\MATLAB\Audiology_Dataset\Audiology_TestLabels.mat
-load C:\Users\E\Documents\MATLAB\Audiology_Dataset\Audiology_TrainData.mat
-load C:\Users\E\Documents\MATLAB\Audiology_Dataset\Audiology_TrainLabels.mat
+load Audiology_TestData.mat
+load Audiology_TestLabels.mat
+load Audiology_TrainData.mat
+load Audiology_TrainLabels.mat
 
 Xtrain = zscore(Audiology_TrainData);
 Xtest = zscore(Audiology_TestData);
