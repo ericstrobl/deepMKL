@@ -20,9 +20,9 @@ disp('GERMAN')
 [model,net] = deepMKL_train(x,y,3,1E-5);
 [pred,acc] = deepMKL_test([x;Xtest],Ytest,model,net);
 
-%% GLASS2
-disp('GLASS2')
-[x, Xtest, y, Ytest] = loadGlass2Dataset();
+%% TICTACTOE
+disp('TICTACTOE')
+[x, Xtest, y, Ytest] = loadTicTacToeDataset();
  
 %one layer
 [model,net] = deepMKL_train(x,y,1,1E-2);
@@ -33,7 +33,7 @@ disp('GLASS2')
 [pred,acc] = deepMKL_test([x;Xtest],Ytest,model,net);
 
 %three layer
-[model,net] = deepMKL_train(x,y,3,1E-2);
+[model,net] = deepMKL_train(x,y,3,1E-5);
 [pred,acc] = deepMKL_test([x;Xtest],Ytest,model,net);
 
 %% AUSTRALIAN
