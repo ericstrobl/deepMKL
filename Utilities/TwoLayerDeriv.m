@@ -23,3 +23,11 @@ end
 function answ = linDeriv(Kf)
     answ = Kf;
 end
+
+function answ = normalizeKernel_Grad(Kf,KfDeriv)
+dKf = diag(Kf);
+dKfDeriv = diag(KfDeriv);
+answ = KfDeriv.*((dKf*dKf').^0.5)...
+    +Kf.*(-0.5.*(dKf*dKf').^(1.5))...
+    .*(dKfDeriv*dKf')+(dKf*dKfDeriv');
+end
