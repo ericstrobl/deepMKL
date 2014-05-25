@@ -1,4 +1,4 @@
-function [model,net] = deepMKL_train(x,y,nLayers,C,LR,maxI)
+function [model,net] = deepMKL_train(x,y,nLayers,LR,maxI,C)
 % Deep Multiple Kernel Learning by Span Bound
 % 
 % Inputs:
@@ -18,9 +18,9 @@ function [model,net] = deepMKL_train(x,y,nLayers,C,LR,maxI)
 
 
 %default values
-SetDefaultValue(4,'C',10);
-SetDefaultValue(5,'LR',1E-4);
-SetDefaultValue(6,'maxI',100);
+SetDefaultValue(4,'LR',1E-4);
+SetDefaultValue(5,'maxI',100);
+SetDefaultValue(6,'C',10);
 
 
 %initialize weights
