@@ -1,9 +1,9 @@
 function [Xtrain, Xtest, Ytrain, Ytest] = loadGermanDataset()
 
-load C:\Users\E\Documents\MATLAB\German_Dataset\German_TestData.mat
-load C:\Users\E\Documents\MATLAB\German_Dataset\German_TestLabels.mat
-load C:\Users\E\Documents\MATLAB\German_Dataset\German_TrainData.mat
-load C:\Users\E\Documents\MATLAB\German_Dataset\German_TrainLabels.mat
+load German_TestData.mat
+load German_TestLabels.mat
+load German_TrainData.mat
+load German_TrainLabels.mat
 
 Xtrain = zscore(German_TrainData);
 Xtest = zscore(German_TestData);
