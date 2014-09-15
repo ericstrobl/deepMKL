@@ -54,7 +54,7 @@ for t=1:maxI,
 
     %feasible region projection
     betas(find(betas<0))=0; %non-negative
-    betas = betas./repmat(sum(betas,2),1,4); %sum to 1
+    betas(end,:) = betas(end,:)./sum(betas(end,:)); %last layer sum to 1 (trace bound)
     
     %stopping conditions
     if isnan(sum(betas)),
